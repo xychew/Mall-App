@@ -1,0 +1,50 @@
+﻿body {
+}
+
+.imagesize {
+    width:60px;
+    height:60px;
+}
+
+#member {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width:60%;
+    height:60%;
+}
+
+#paradigm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:100%;
+}
+
+#padini, #burger {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+    
+}
+
+.center {
+    text-align:center;
+}
+
+.notificationDeleteIcon {
+position: absolute;
+font-size: 5px;
+right: .2em;
+margin-top: -.88em;
+}
+
+.productImage {
+    width: 100%;
+    margin-top:15px;
+    margin-left:-5px;
+}

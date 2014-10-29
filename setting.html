@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/StyleSheet.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="myJS/page.js"></script>
+    <script type="text/javascript" src="myJS/setting.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.3.min.css">
+</head>
+
+<body>
+
+    <div data-role="page" id="setting">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+                <h1>Setting</h1>
+            <a href="index.html" data-role="button" data-icon="home" data-iconshow="false" data-iconpos="notext" class="ui-btn-right"></a>
+        </div>
+        
+        <form>
+            <div class="ui-content">
+                <label for="eventset"><b>Event</b></label>
+                <select name="eventset" id="eventset" data-role="slider">
+                    <option value="off">Off</option>
+                    <option value="on">On</option>
+                </select>
+            </div>
+        </form>
+
+        <ul data-role="listview" data-inset="false" class="ui-alt-icon">
+            <li><a id="happenset" href="#">Happening</a></li>
+            <li><a id="retailset" href="#">Retailer</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

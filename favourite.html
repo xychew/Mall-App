@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/StyleSheet.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="myJS/page.js"></script>
+    <script type="text/javascript" src="myJS/directory.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.3.min.css">
+</head>
+
+<body>
+
+    <div data-role="page" id="favourite">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Favourite</h1>
+            <a href="index.html" data-role="button" data-icon="home" data-iconshow="false" data-iconpos="notext" class="ui-btn-right"></a>
+        </div>
+        <h4>Burger King</h4>
+        <ul data-role="listview" data-split-icon="delete" data-split-theme="a" data-inset="true">
+            <li data-role="list-divider">
+                <span class="notificationDeleteIcon">
+                    <a id="favourite_remove" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext" data-direction="reverse" rel="external"></a>
+                </span>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a href="#popupburger" data-rel="popup" data-position-to="window" data-transition="pop">
+                            <img class="productImage" src="picture/grill.png"></a>
+                        <div data-role="popup" id="popupburger" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="picture/grill.png">
+                        </div>
+                    </div>
+                    <div class="ui-block-b" style="width: 40%; margin-left: 5px;">
+                        <h1>Grilled Chicken</h1>
+                        <p>Meal also includes fries & drinks</p>
+                        <p>RM 9.95</p>
+                        <a href="#" id="viewShopB" class="ui-btn ui-corner-all ui-mini">View Shop</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <h4>Padini Concept Store</h4>
+        <ul data-role="listview" data-split-icon="delete" data-split-theme="a" data-inset="true">
+            <li data-role="list-divider">
+                <span class="notificationDeleteIcon">
+                    <a id="A1" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext" data-direction="reverse" rel="external"></a>
+                </span>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a href="#popupPic" data-rel="popup" data-position-to="window" data-transition="pop">
+                            <img class="productImage" src="picture/blouse.jpg"></a>
+                        <div data-role="popup" id="popupPic" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="picture/blouse.jpg">
+                        </div>
+                    </div>
+                    <div class="ui-block-b" style="width: 40%; margin-left: 5px;">
+                        <h1>Lovely Candy Blose</h1>
+                        <p>Yellow - S</p>
+                        <p>RM 39.90</p>
+                        <a href="#" id="viewShopF" class="ui-btn ui-corner-all ui-mini">View Shop</a>
+                        <a href="#" id="addCartF" class="ui-btn ui-corner-all ui-mini">Add to Cart</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
