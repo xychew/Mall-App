@@ -14,6 +14,14 @@ $(document).on('pagecreate', '#directory_fashion', function () {
 
 });
 
+$(document).on('pagecreate', '#directory_fashion_padini', function () {
+
+    $("#padini_viewpromotionbtn").on("click", function (event) {
+        window.location.href = "promotion_fashion.html";
+    });
+
+});
+
 $(document).on('pagecreate', '#directory', function () {
 
     $("#d4").on("click", function (event) {
@@ -45,3 +53,5 @@ $(document).on('pagecreate', '#favourite', function () {
     });
 
 });
+
+

@@ -78,6 +78,14 @@ $(document).on('pagecreate', '#menu', function () {
 
 });
 
+$(document).on('pagecreate', '#menu', function () {
+
+    $("#mycartbtn").on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+});
+
 $(document).on('pagecreate', '#center', function () {
 
     $("#viewdirectbtn").on("click", function (event) {

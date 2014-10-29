@@ -40,11 +40,49 @@
 position: absolute;
 font-size: 5px;
 right: .2em;
-margin-top: -.88em;
+margin-top: -15px;
 }
 
 .productImage {
     width: 100%;
+    height: 70%;
     margin-top:15px;
     margin-left:-5px;
 }
+
+/*For promotion swipe only*/
+
+/* Set the background image sources */
+#newyork { background-image: url("picture/promo1.jpg"); }
+#buenosaires { background-image: url("picture/promo2.jpg"); }
+#paris { background-image: url("picture/promo3.jpg"); }
+#capetown { background-image: url("picture/promo4.jpg"); }
+#seoul { background-image: url("picture/promo5.jpg"); }
+#sydney { background-image: url("picture/promo6.jpg"); }
+/* Background settings */
+.demo-page {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* Transparent footer */
+.demo-page .ui-footer {
+    background: none;
+    border: none;
+    bottom: 0;
+}
+/* The footer won't have a height because there are only two absolute positioned elements in it.
+So we position the buttons from the bottom. */
+.control.ui-btn-left,
+.trivia-btn.ui-btn-right {
+    top: auto;
+    bottom: 7px;
+    margin: 0;
+}
+/* Custom styling for the trivia source */
+small {
+    font-size: .75em;
+    color: #666;
+}
+
+/*End of promotion swipe*/
