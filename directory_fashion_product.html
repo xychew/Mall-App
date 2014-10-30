@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/StyleSheet.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="myJS/page.js"></script>
+    <script type="text/javascript" src="myJS/directory.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.3.min.css">
+</head>
+
+<body>
+
+    <div data-role="page" id="directory_fashion_product">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Product</h1>
+            <a href="index.html" data-role="button" data-icon="home" data-iconshow="false" data-iconpos="notext" class="ui-btn-right"></a>
+        </div>
+
+        <form class="ui-filterable">
+            <input id="filterBasic-input" data-type="search" placeholder="Enter keyword to search">
+        </form>
+
+        <div data-role="tabs" id="tabs">
+            <div data-role="navbar">
+                <ul>
+                    <li><b>SORT BY: </b></li>
+                    <li><a href="#price" data-ajax="false">Price</a></li>
+                    <li><a href="#a-z" data-ajax="false">A-Z</a></li>
+                </ul>
+            </div>
+            <div id="price">
+
+                <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true">
+                    <li><b>Logo Tee</b>
+                        <span class="favouriteIcon">
+                            <a id="favourite1" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/logotee.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Yellow - M</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="addCartP1" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Lovely Candy Blouse</b>
+                        <span class="favouriteIcon">
+                            <a id="favourite2" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext ui-alt-icon"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/blouse.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px;">
+
+                                <p>Yellow - S</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="addCartP2" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Men</b>
+                        <span class="favouriteIcon">
+                            <a id="favourite3" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_men.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - L</p>
+                                <br />
+                                <p>RM 59.90</p>
+                                <br />
+                                <a href="#" id="addCartP3" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Women</b>
+                        <span class="favouriteIcon">
+                            <a id="favourite4" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_women.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - M</p>
+                                <br />
+                                <p>RM 79.90</p>
+                                <br />
+                                <a href="#" id="addCartP4" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Hoodie</b>
+                        <span class="favouriteIcon">
+                            <a id="favourite5" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/hoodie.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - M</p>
+                                <br />
+                                <p>RM 89.90</p>
+                                <br />
+                                <a href="#" id="addCartP5" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Long Sleeve Shirt</b>
+                        <span class="favouriteIcon">
+                            <a id="favourite6" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/longsleeve.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - L</p>
+                                <br />
+                                <p>RM 99.90</p>
+                                <br />
+                                <a href="#" id="addCartP6" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="a-z">
+
+                <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true">
+
+                    <li><b>Hoodie</b>
+                        <span class="favouriteIcon">
+                            <a id="A9" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/hoodie.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - M</p>
+                                <br />
+                                <p>RM 89.90</p>
+                                <br />
+                                <a href="#" id="a10" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Logo Tee</b>
+                        <span class="favouriteIcon">
+                            <a id="A1" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/logotee.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Yellow - M</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="a2" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Long Sleeve Shirt</b>
+                        <span class="favouriteIcon">
+                            <a id="A11" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/longsleeve.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - L</p>
+                                <br />
+                                <p>RM 99.90</p>
+                                <br />
+                                <a href="#" id="a12" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Lovely Candy Blouse</b>
+                        <span class="favouriteIcon">
+                            <a id="A3" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext ui-alt-icon"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/blouse.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px;">
+                                <p>Yellow - S</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="a4" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Men</b>
+                        <span class="favouriteIcon">
+                            <a id="A5" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_men.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - L</p>
+                                <br />
+                                <p>RM 59.90</p>
+                                <br />
+                                <a href="#" id="a6" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Women</b>
+                        <span class="favouriteIcon">
+                            <a id="A7" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_women.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - M</p>
+                                <br />
+                                <p>RM 79.90</p>
+                                <br />
+                                <a href="#" id="a8" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
