@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>JQM latest - issue template</title>
     <script type="text/javascript" src="phonegap.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="myJS/page.js"></script>
@@ -20,17 +19,39 @@
     </script>
 
     <link rel="stylesheet" href="marketplace.css">
-
+    <script src="js/login.js"></script>
     
 </head>
 <body>
-    <!--================================= SPLASH SCREEN PAGE =================================-->
-    <div class="splashscreen" id="splashscreen" data-role="page">
-        <div class="panel">
-            <h1>IFCA<br />Marketplace</h1>
+     <div id="login" data-role="page">
+        <div data-role="header" data-position="fixed">
+            
+            <h1>Login</h1>
+
         </div>
-        <script src="js/index.js"></script>
+
+        <div data-role="content" data-theme="a">
+
+
+            <input id="Email" type="text" placeholder="Email" maxlength="12" />
+
+            <input id="Password" type="text" placeholder="Password" maxlength="12"/>
+
+            <br />
+
+            <div class="right">
+
+                <a href="register.html" rel="external">Not Registedred</a>
+                <br />
+                <a href="forgetpassword.html" rel="external">Forget Password</a>
+
+
+            </div>
+
+            <input id="btnLogin" type="button" value="Login" />
+
+        </div>
+
     </div>
-    <!--================================= (END) SPLASH SCREEN PAGE (END) =================================-->
 </body>
 </html>
