@@ -1,245 +1,263 @@
-// directory page to fashion and food
-
 $(document).on('pagecreate', '#directory', function () {
 
     $("#d3").on("click", function (event) {
-        window.location.href = "directory_fashion.html";
+        window.location.href = "directory.html#directory_fashion";
+    });
+
+    $("#d4").on("click", function (event) {
+        window.location.href = "directory.html#directory_food";
     });
 
 });
 
 $(document).on('pagecreate', '#directory_fashion', function () {
-
+    
     $("#f4").on("click", function (event) {
-        window.location.href = "directory_fashion_padini.html";
+        window.location.href = "directory.html#directory_fashion_padini";
     });
-
-});
-
-$(document).on('pagecreate', '#directory', function () {
-
-    $("#d4").on("click", function (event) {
-        window.location.href = "directory_food.html";
-    });
-
-});
-
-$(document).on('pagecreate', '#directory_food', function () {
 
     $("#b4").on("click", function (event) {
-        window.location.href = "directory_food_burger.html";
+        window.location.href = "directory.html#directory_food_burger";
     });
 
 });
-
-// end of directory page to fashion and food
-
-// From shop button to promotion and product
 
 $(document).on('pagecreate', '#directory_fashion_padini', function () {
 
     $("#padini_viewpromotionbtn").on("click", function (event) {
-        window.location.href = "promotion_fashion.html";
+        window.location.href = "directory.html#promotion_fashion";
     });
-
-});
-
-$(document).on('pagecreate', '#directory_fashion_padini', function () {
 
     $("#padini_viewproductbtn").on("click", function (event) {
-        window.location.href = "directory_fashion_product.html";
+        window.location.href = "directory.html#directory_fashion_product";
     });
 
 });
 
-
 $(document).on('pagecreate', '#directory_food_burger', function () {
+
+    $('#burger_viewpromotionbtn').on('click', function (event) {
+        window.location.href = 'directory.html#promotion_food';
+    });
 
     $("#burger_viewproductbtn").on("click", function (event) {
-        window.location.href = "directory_food_product.html";
-    });
-});
-
-$(document).on('pagecreate', '#directory_food_burger', function () {
-    $('#burger_viewpromotionbtn').on('click', function (event) {
-        window.location.href = 'promotion_food.html';
-    });
-});
-
-// end of shop button to promotion and product
-
-// From favourite page to shop
-
-$(document).on('pagecreate', '#favourite', function () {
-
-    $("#viewShopB").on("click", function (event) {
-        window.location.href = "directory_food_burger.html";
+        window.location.href = "directory.html#directory_food_product";
     });
 
 });
-
-$(document).on('pagecreate', '#favourite', function () {
-
-    $("#viewShopF").on("click", function (event) {
-        window.location.href = "directory_fashion_padini.html";
-    });
-
-});
-
-// end of favourite page to shop
-
-//From fashion product page to favourite page
 
 $(document).on('pagecreate', '#directory_fashion_product', function () {
 
-    $("#favourite1").on("click", function (event) {
+    $("#fa_favourite1").on("click", function (event) {
         window.location.href = "favourite.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
-    $("#favourite2").on("click", function (event) {
+    $("#fa_favourite2").on("click", function (event) {
         window.location.href = "favourite.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
-    $("#favourite3").on("click", function (event) {
+    $("#fa_favourite3").on("click", function (event) {
         window.location.href = "favourite.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
-    $("#favourite4").on("click", function (event) {
+    $("#fa_favourite4").on("click", function (event) {
         window.location.href = "favourite.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
-    $("#favourite5").on("click", function (event) {
+    $("#fa_favourite5").on("click", function (event) {
         window.location.href = "favourite.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
-    $("#favourite6").on("click", function (event) {
+    $("#fa_favourite6").on("click", function (event) {
         window.location.href = "favourite.html";
     });
 
-});
+    $("#fa_favourite7").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
 
-// end of fashion product page to favourite page
+    $("#fa_favourite8").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
 
-// From fashion product page to my cart
+    $("#fa_favourite9").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
 
-$(document).on('pagecreate', '#directory_fashion_product', function () {
+    $("#fa_favourite10").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fa_favourite11").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fa_favourite12").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
 
     $("#addCartP1").on("click", function (event) {
         window.location.href = "myCart.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
     $("#addCartP2").on("click", function (event) {
         window.location.href = "myCart.html";
     });
-
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
 
     $("#addCartP3").on("click", function (event) {
         window.location.href = "myCart.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
     $("#addCartP4").on("click", function (event) {
         window.location.href = "myCart.html";
     });
-
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
 
     $("#addCartP5").on("click", function (event) {
         window.location.href = "myCart.html";
     });
 
-});
-
-$(document).on('pagecreate', '#directory_fashion_product', function () {
-
     $("#addCartP6").on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $("#addCartP7").on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $("#addCartP8").on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $("#addCartP9").on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $("#addCartP10").on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $("#addCartP11").on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $("#addCartP12").on("click", function (event) {
         window.location.href = "myCart.html";
     });
 
 });
 
-// end of fashion product page to my cart
-
-// From food product page to favourite
-
 $(document).on('pagecreate', '#directory_food_product', function () {
 
-    $("#favourite1").on("click", function (event) {
+    $("#fo_favourite1").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite2").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite3").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite4").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite5").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite6").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite7").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite8").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite9").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite10").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite11").on("click", function (event) {
+        window.location.href = "favourite.html";
+    });
+
+    $("#fo_favourite12").on("click", function (event) {
         window.location.href = "favourite.html";
     });
 
 });
 
-$(document).on('pagecreate', '#directory_food_product', function () {
+$(document).on('pagecreate', '#promotion_fashion', function () {
 
-    $("#favourite2").on("click", function (event) {
-        window.location.href = "favourite.html";
+    $('#fa_addCartPromobtn1').on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $('#fa_addCartPromobtn2').on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $('#fa_addCartPromobtn3').on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $('#fa_addCartPromobtn4').on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $('#fa_addCartPromobtn5').on("click", function (event) {
+        window.location.href = "myCart.html";
+    });
+
+    $('#fa_addFavPromobtn1').on('click', function (event) {
+        window.location.href = 'favourite.html';
+    });
+
+    $('#fa_addFavPromobtn2').on('click', function (event) {
+        window.location.href = 'favourite.html';
+    });
+
+    $('#fa_addFavPromobtn3').on('click', function (event) {
+        window.location.href = 'favourite.html';
+    });
+
+    $('#fa_addFavPromobtn4').on('click', function (event) {
+        window.location.href = 'favourite.html';
+    });
+
+    $('#fa_addFavPromobtn5').on('click', function (event) {
+        window.location.href = 'favourite.html';
     });
 
 });
+    
+$(document).on('pagecreate', '#promotion_food', function () {
 
-$(document).on('pagecreate', '#directory_food_product', function () {
+    $('#fo_addFavPromobtn1').on('click', function (event) {
+        window.location.href = 'favourite.html';
+    });
 
-    $("#favourite3").on("click", function (event) {
-        window.location.href = "favourite.html";
+    $('#fo_addFavPromobtn2').on('click', function (event) {
+        window.location.href = 'favourite.html';
+    });
+
+    $('#fo_addFavPromobtn3').on('click', function (event) {
+        window.location.href = 'favourite.html';
+    });
+
+    $('#fo_addFavPromobtn4').on('click', function (event) {
+        window.location.href = 'favourite.html';
     });
 
 });
-
-$(document).on('pagecreate', '#directory_food_product', function () {
-
-    $("#favourite4").on("click", function (event) {
-        window.location.href = "favourite.html";
-    });
-
-});
-
-$(document).on('pagecreate', '#directory_food_product', function () {
-
-    $("#favourite5").on("click", function (event) {
-        window.location.href = "favourite.html";
-    });
-
-});
-
-$(document).on('pagecreate', '#directory_food_product', function () {
-
-    $("#favourite6").on("click", function (event) {
-        window.location.href = "favourite.html";
-    });
-
-});
-
-// end food product page to favourite

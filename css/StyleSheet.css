@@ -140,4 +140,79 @@ background-color: white;
     padding: 0 7em;
 }
 
+.menu-ui-content {
+    border-width: 0;
+    overflow: visible;
+    overflow-x: hidden;
+    padding: 1em;
+    margin-top: 230px!important;    
+    background-color: RGB(230,230,230) !important;
+    z-index: 0;
+}
+
+.page-bg {
+    background-image:url(../picture/bg.jpg) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.login-header {
+    font-family: 'OpenSans-Light';
+    text-align: center;
+}
+
+/*.ui-corner-all {
+    -webkit-border-radius: 0em !important;
+    border-radius: 0em !important;
+}*/
+
+.input-textbox {
+    background-color: RGB(216,216,216) !important;
+    color: RGB(105,105,105) !important;
+}
+
+#btnLogin {
+    border: none !important;
+    box-shadow: none !important;
+    outline: 0;
+    background: none;
+    text-align: right;
+}
+
+.login-singup {
+    text-align: center;
+    text-shadow: none;
+    color: white;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: RGB(104,104,104);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: RGB(104,104,104);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: RGB(104,104,104);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: RGB(104,104,104);
+}
+
+.overlay-img {
+    z-index: 9999;
+    position: absolute;
+    margin-top: 200px;
+    background-color: RGB(37,37,37);
+    height: 60px;
+    width: 60px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 200em;
+}
+
+#login-logo {
+    margin: 6px;
+}
+
 /*==============================================================================================================================*/

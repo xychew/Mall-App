@@ -1,55 +1,30 @@
 $(document).on('pagecreate', '#feedback', function () {
 
     $("#newfeed").on("click", function (event) {
-        window.location.href = "feedback_new.html";
+        window.location.href = "feedback.html#newfeedback";
     });
-
-});
-
-$(document).on('pagecreate', '#newfeedback', function () {
 
     $("#ok_newfeedbackbtn").on("click", function (event) {
-        window.location.href = "feedback.html";
+        window.location.href = "feedback.html#feedback";
     });
-
-});
-
-$(document).on('pagecreate', '#feedback', function () {
 
     $("#feed1").on("click", function (event) {
-        window.location.href = "feedback_view.html#feedback_view1";
+        window.location.href = "feedback.html#feedback_view1";
     });
-
-});
-
-$(document).on('pagecreate', '#feedback', function () {
 
     $("#feed2").on("click", function (event) {
-        window.location.href = "feedback_view.html#feedback_view1";
+        window.location.href = "feedback.html#feedback_view1";
     });
-
-});
-
-$(document).on('pagecreate', '#feedback', function () {
 
     $("#feed3").on("click", function (event) {
-        window.location.href = "feedback_view.html#feedback_view1";
+        window.location.href = "feedback.html#feedback_view1";
     });
-
-});
-
-$(document).on('pagecreate', '#feedback', function () {
 
     $("#feed4").on("click", function (event) {
-        window.location.href = "feedback_view.html#feedback_view1";
+        window.location.href = "feedback.html#feedback_view1";
     });
-
-});
-
-$(document).on('pagecreate', '#feedback_view1', function () {
 
     $("#yes_deletebtn").on("click", function (event) {
-        window.location.href = "feedback.html";
+        window.location.href = "feedback.html#feedback";
     });
-
 });

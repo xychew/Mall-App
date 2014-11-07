@@ -1,32 +1,119 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>IFCA Mall App</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/StyleSheet.css">
+
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="myJS/page.js"></script>
-    <script type="text/javascript" src="myJS/feedback.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
     <link rel="stylesheet" href="js/jquery.mobile-1.4.3.min.css">
+
+    <script type="text/javascript" src="myJS/home.js"></script>
+    <script type="text/javascript" src="myJS/feedback.js"></script>
+    <link rel="stylesheet" href="css/StyleSheet.css">
+
 </head>
 
 <body>
 
+    <!--====================================================1st page==================================================-->
+
     <div data-role="page" id="feedback">
         <div data-role="header" data-position="fixed">
             <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
-                <h1>Feedback</h1>
-            <a href="#" id="feedbackhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Feedback</h1>
+            <a href="#" id="newfeed" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-plus ui-btn-icon-notext ui-corner-all"></a>
         </div>
 
         <ul data-role="listview" data-inset="true" class="ui-alt-icon">
-                <li><a id="feed1" href="#" >Feedbacks No: 10013<br />Date: 14/7/2014<br />Feedback on: Customer Service</a></li>
-                <li><a id="feed2" href="#" >Feedbacks No: 10012<br />Date: 04/6/2013<br />Feedback on: Billing</a></li>
-                <li><a id="feed3" href="#" >Feedbacks No: 10011<br />Date: 21/4/2013<br />Feedback on: Directory</a></li>
-                <li><a id="feed4" href="#" >Feedbacks No: 10010<br />Date: 03/1/2012<br />Feedback on: Customer Service</a></li>
+            <li><a id="feed1" href="#">Feedbacks No: 10013<br />
+                Date: 14/7/2014<br />
+                Feedback on: Customer Service</a></li>
+            <li><a id="feed2" href="#">Feedbacks No: 10012<br />
+                Date: 04/6/2013<br />
+                Feedback on: Billing</a></li>
+            <li><a id="feed3" href="#">Feedbacks No: 10011<br />
+                Date: 21/4/2013<br />
+                Feedback on: Directory</a></li>
+            <li><a id="feed4" href="#">Feedbacks No: 10010<br />
+                Date: 03/1/2012<br />
+                Feedback on: Customer Service</a></li>
         </ul>
+    </div>
+
+    <!--======================================================2nd page==================================================-->
+
+    <div data-role="page" id="feedback_view1">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Feedback No.: 10013</h1>
+            <a href="#" id="feedback_view1home" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p><b>Date: </b>14/4/2014</p>
+            <p><b>Feedback on: </b>Customer Service</p>
+            <form>
+                <label for="feedback_text"><b>Feedback/Comments:</b></label>
+                <textarea style="resize: none;" maxlength="160" name="feedback_text" id="feedback_text" readonly>No one is picking up the hotline phone. Customer service should be improved.</textarea>
+                <p>Character: 58/160</p>
+            </form>
+
+            <a href="#feedback_delete" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow">Delete</a>
+
+            <div data-role="popup" id="feedback_delete" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width: 400px;">
+                <div data-role="header" data-theme="a">
+                    <h1>Message</h1>
+                </div>
+                <div role="main" class="ui-content center">
+                    <p>Are you sure want to delete this record?</p>
+                    <a href="#" id="yes_deletebtn" data-role="button" data-inline="true" data-theme="b">Yes</a>
+                    <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b">No</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======================================================3rd page==================================================-->
+
+    <div data-role="page" id="newfeedback">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>New Feedback</h1>
+            <a href="#" id="newfeedbackhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <p><b>Date: </b>28/10/2014</p>
+            <p>
+                <b>Feedback on: </b>
+                <select name="feedbacktype" id="feedbacktype" data-mini="true">
+                    <option value="1">Billing</option>
+                    <option value="2">Customer Service</option>
+                    <option value="3">Directory</option>
+                    <option value="4">Event</option>
+                    <option value="5">Membership</option>
+                </select>
+            </p>
+            <form>
+                <label for="feedback_text"><b>Feedback/Comments:</b></label>
+                <textarea maxlength="160" name="feedback_text" id="Textarea1" placeholder="Type your comments here..."></textarea>
+                <p>Character: 58/160</p>
+            </form>
+
+            <a href="#popupDialogActivate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow">Submit</a>
+
+            <div data-role="popup" id="popupDialogActivate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width: 400px;">
+                <div data-role="header" data-theme="a">
+                    <h1>Message</h1>
+                </div>
+                <div role="main" class="ui-content center">
+                    <h3 class="ui-title">Your Feedback/Comments have been submitted</h3>
+                    <a href="#" id="ok_newfeedbackbtn" class="ui-btn ui-corner-all">OK</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 

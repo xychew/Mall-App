@@ -1,36 +1,392 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JQM latest - issue template</title>
-    <script type="text/javascript" src="phonegap.js"></script>
+    <title>IFCA Mall App</title>
+
+    <link rel="shortcut icon" href="picture/icon.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="myJS/page.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
     <link rel="stylesheet" href="js/jquery.mobile-1.4.3.min.css">
 
-    <script src="js/fastclick.js"></script>
-    <script type="application/javascript">
-        window.addEventListener('load', function () {
-            FastClick.attach(document.body);
-        }, false);
-    </script>
-
-    <link rel="stylesheet" href="marketplace.css">
-
-    
+    <script type="text/javascript" src="myJS/menu.js"></script>
+    <script type="text/javascript" src="myJS/index.js"></script>
+    <link rel="stylesheet" href="css/font/OpenSans-Light.css">
+    <link rel="stylesheet" href="css/StyleSheet.css">
 </head>
 <body>
-    <!--================================= SPLASH SCREEN PAGE =================================-->
-    <div class="splashscreen" id="splashscreen" data-role="page">
+    <!--================================= Splash screen page =================================-->
+    <div data-role="page" class="splashscreen" id="splashscreen">
         <div class="panel">
-            <h1>IFCA<br />Marketplace</h1>
+            <h1>IFCA<br />
+                Mall App</h1>
         </div>
-        <script src="js/index.js"></script>
+
     </div>
-    <!--================================= (END) SPLASH SCREEN PAGE (END) =================================-->
+    <!--================================= Login page =================================-->
+
+    <div data-role="page" id="login" class="page-bg">
+
+        <div class="overlay-img">
+            <img id="login-logo" src="picture/MenuIcons/logout.svg" width="50" height="50" />
+        </div>
+        <div data-role="content" data-theme="a" class="menu-ui-content">
+
+            <h1 class="login-header">Login</h1>
+            <input id="Email" type="text" placeholder="Email" maxlength="12" class="ui-input-text ui-body-inherit input-textbox" />
+
+            <input id="Password" type="text" placeholder="Password" maxlength="12" class="ui-input-text ui-body-inherit input-textbox" />
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#" id="linkForgetPassword">Forget Password</a>
+                </div>
+                <div class="ui-block-b">
+                    <button id="btnLogin" value="Login" data-icon="arrow-r" data-iconpos="right">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <div class="login-singup">Don't have account yet?<a href="#" id="linkSignup">Sign Up</a></div>
+
+    </div>
+
+    <!--============================================= Forget password ===========================================-->
+
+    <div id="forgetPassword" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-btn ui-nodisc-icon ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Forget Password</h1>
+
+        </div>
+
+        <div data-role="content" data-theme="a">
+
+            <input id="Text1" type="text" placeholder="Email" maxlength="12" />
+
+            <br />
+
+            <input id="btnGetCode" type="button" value="Get Activation Code" />
+
+
+        </div>
+
+    </div>
+
+    <!--============================================= Activation ===========================================-->
+
+    <div id="activation" data-role="page">
+        <div data-role="header" data-position="fixed">
+
+            <h1>Activation</h1>
+
+        </div>
+
+        <div data-role="content" data-theme="a">
+
+            <input id="Text2" type="text" placeholder="4-Digit Code:" maxlength="12" />
+
+            <br />
+
+            <input id="btnActivate" type="button" value="Activate" />
+
+            <!--<a href="#popupDialogActivate" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">In-Activate</a>-->
+
+            <div data-role="popup" id="popupDialogActivate" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width: 400px;">
+                <div data-role="header" data-theme="a">
+                    <h1>Invalid Code</h1>
+                </div>
+                <div role="main" class="ui-content center">
+                    <h3 class="ui-title">Invalid Activation Code</h3>
+                    <p>please check again</p>
+
+                    <a href="#" class="ui-btn" data-rel="back" data-transition="flow">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--============================================= Create password ===========================================-->
+
+    <div id="createPassword" data-role="page">
+        <div data-role="header" data-position="fixed">
+
+            <h1>Create Page</h1>
+
+        </div>
+
+        <div data-role="content" data-theme="a">
+
+            <input id="Text3" type="text" placeholder="Password" maxlength="12" />
+            <input id="confirmPassword" type="text" placeholder="Confirm Password:" maxlength="12" />
+
+            <br />
+
+            <input id="btnCreatePassword" type="button" value="Create Password" />
+        </div>
+    </div>
+
+    <!--============================================= Registration ===========================================-->
+
+    <div data-role="page" id="register">
+
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-btn ui-nodisc-icon ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Registrarion</h1>
+        </div>
+
+        <div data-role="content" data-theme="a" class="registerPage">
+
+
+
+            <input id="email" type="text" placeholder="Email:" maxlength="50">
+
+            <br />
+
+            <input id="btnRegister" type="button" value="Register">
+        </div>
+    </div>
+
+    <!--============================================= Guidelines ===========================================-->
+
+    <div data-role="page" id="guidelines">
+        <div data-role="header" data-position="fixed">
+
+            <h1 style="white-space: normal;">Purchaser Guidelines</h1>
+
+        </div>
+
+        <div data-role="content" data-theme="a">
+
+            <p style="white-space: normal;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magan aliqua sed do eiusmod tempor incididunt ut labore et dolore magna alique
+            </p>
+
+
+            <form>
+                <input type="checkbox" name="checkbox-mini-0" id="checkbox-mini-0" data-mini="true">
+                <label for="checkbox-mini-0">I Agree Use Term</label>
+            </form>
+
+
+            <br />
+
+            <input id="btnAccept" type="button" value="Accept" />
+            <input id="btnDecline" type="button" value="Decline" />
+
+        </div>
+
+    </div>
+
+    <!--============================================= Happening ===========================================-->
+
+    <div data-role="page" id="happening">
+        <div data-role="header" data-position="fixed">
+            <a href="#menu" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Happening</h1>
+            <a href="#search" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+        <br />
+        <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+            <li data-role="list-divider">Promotion<span class="notificationDeleteIcon"> <a id="A2" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/style.jpg">
+                <h4>Padini Concept Store</h4>
+                <p>Blouse: <b>2 for RM 128</b></p>
+                <p>Dress & Bottom: <b>2 for RM 168</b></p>
+            </li>
+            <br />
+            <li data-role="list-divider">Event<span class="notificationDeleteIcon"> <a id="A3" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/taste.jpg">
+                <h4>Taste of Paradigm 2014</h4>
+                <p>22/09/2014 - 21/10/2014</p>
+            </li>
+            <br />
+            <li data-role="list-divider">Event<span class="notificationDeleteIcon"> <a id="A1" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/miss.jpg">
+                <h4 style="white-space: normal">Miss Global International Malaysia 2014/15 Talent Night</h4>
+                <p>01/08/2014</p>
+
+            </li>
+            <br />
+            <li data-role="list-divider">Promotion<span class="notificationDeleteIcon"> <a id="A7" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/burger_promo1.jpg">
+                <h4 style="white-space: normal">Rocker Stacker</h4>
+                <p style="white-space: normal"><i>Flame-grilled double patties, wild berry sauce, corn dusted bun, and smoked chicken roll.</i></p>
+                <p>Beef: <b>RM 14.95</b></p>
+                <p>Chicken: <b>RM 14.95</b></p>
+            </li>
+        </ul>
+    </div>
+
+    <!--============================================= Menu ===========================================-->
+
+    <div data-role="page" id="menu">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Paradigm Mall</h1>
+
+        </div>
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#" id="profilebtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/profile.svg"><br />
+                    My Profile</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#" id="eventbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/event.svg"><br />
+                    Event</a>
+            </div>
+            <div class="ui-block-c">
+                <a href="#" id="directbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/directory.svg"><br />
+                    Directory</a>
+            </div>
+        </div>
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#" id="favouritebtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/favourite.svg" /><br />
+                    Favourite</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#" id="mycartbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/cart.svg"><br />
+                    My Cart</a>
+            </div>
+            <div class="ui-block-c">
+                <a href="#" id="historybtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/history.svg"><br />
+                    History</a>
+            </div>
+        </div>
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#" id="membershipbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/membership.svg"><br />
+                    Membership</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#" id="centerbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/center-info.svg"><br />
+                    Center Info</a>
+            </div>
+            <div class="ui-block-c">
+                <a href="#" id="customerbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/customer-serv.svg"><br />
+                    Customer Service</a>
+            </div>
+        </div>
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#" id="parkingbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/parking.png"><br />
+                    Parking</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#" id="feedbackbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/feedback.svg"><br />
+                    Feedback</a>
+            </div>
+            <div class="ui-block-c">
+                <a href="#" id="settingbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/setting.svg"><br />
+                    Setting</a>
+            </div>
+        </div>
+
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <a href="#" id="scannerbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/scanner.svg"><br />
+                    QR Scanner</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#logout" data-rel="popup" data-position-to="window" data-transition="pop" style="font-size: 12px" class="ui-btn">
+                    <img class="imagesize" src="picture/MenuIcons/logout.svg"><br />
+                    Log Out</a>
+            </div>
+        </div>
+        <div data-role="popup" id="logout" data-overlay-theme="b" data-theme="b" data-dismissible="false">
+            <div data-role="header" data-theme="a">
+                <h1>Message</h1>
+            </div>
+            <div role="main" class="ui-content center">
+                <p>Are you sure want to log out?</p>
+                <a href="index.html" data-role="button" data-inline="true" data-theme="b">Yes</a>
+                <a href="#" data-role="button" data-inline="true" data-rel="back" data-theme="b">No</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--============================================= Search ===========================================-->
+
+    <div data-role="page" id="search">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Search</h1>
+        </div>
+
+        <form class="ui-filterable">
+            <input id="filterBasic-input" data-type="search" placeholder="Enter keyword to search">
+        </form>
+
+        <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true">
+            <li><b>Promotion</b><span class="notificationDeleteIcon"> <a id="A4" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/style.jpg">
+                <h4>Padini Concept Store</h4>
+                <p>Blouse: <b>2 for RM 128</b></p>
+                <p>Dress & Bottom: <b>2 for RM 168</b></p>
+            </li>
+            <br />
+            <li><b>Event</b><span class="notificationDeleteIcon"> <a id="A5" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/taste.jpg">
+                <h4>Taste of Paradigm 2014</h4>
+                <p>22/09/2014 - 21/10/2014</p>
+            </li>
+            <br />
+            <li><b>Event</b><span class="notificationDeleteIcon"> <a id="A6" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/miss.jpg">
+                <h4 style="white-space: normal">Miss Global International Malaysia 2014/15 Talent Night</h4>
+                <p>01/08/2014</p>
+            </li>
+            <br />
+            <li><b>Promotion</b><span class="notificationDeleteIcon"> <a id="A8" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline" data-direction="reverse" rel="external">Power Icon</a></span>
+                <br />
+                <br />
+                <img class="promotionImage" src="picture/burger_promo1.jpg">
+                <h4 style="white-space: normal">Rocker Stacker</h4>
+                <p style="white-space: normal"><i>Flame-grilled double patties, wild berry sauce, corn dusted bun, and smoked chicken roll.</i></p>
+                <p>Beef: <b>RM 14.95</b></p>
+                <p>Chicken: <b>RM 14.95</b></p>
+            </li>
+        </ul>
+
+    </div>
+
+
 </body>
 </html>

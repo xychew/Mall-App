@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="css/StyleSheet.css">
+    <title>IFCA Mall App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="myJS/page.js"></script>
-    <script type="text/javascript" src="myJS/checkout.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
     <link rel="stylesheet" href="js/jquery.mobile-1.4.3.min.css">
+
+    <script type="text/javascript" src="myJS/home.js"></script>
+    <script type="text/javascript" src="myJS/cart.js"></script>
+    <link rel="stylesheet" href="css/StyleSheet.css">
 </head>
 <body>
+
+    <!--    ====================================== 1st page ======================================================-->
 
     <div data-role="page" id="mycart">
         <div data-role="header" data-position="fixed">
             <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
-                <h1>My Cart</h1>
+            <h1>My Cart</h1>
             <a href="#" id="mycarthome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
         </div>
 
@@ -53,28 +59,140 @@
             </li>
         </ul>
 
-        <p style="text-align:center;">Total: <b>RM 119.80</b></p>
+        <p style="text-align: center;">Total: <b>RM 119.80</b></p>
         <a href="#" id="checkoutbtn" class="ui-btn ui-corner-all ui-shadow ui-mini"><b>Check Out</b></a>
-
-        <h4>Uniqlo</h4>
-        <ul data-role="listview" data-split-icon="delete" data-split-theme="a" data-inset="true">
-            <li data-role="list-divider">Slim Fit Jean
-                <span class="notificationDeleteIcon">
-                    <a id="A3" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext" data-direction="reverse" rel="external"></a>
-                </span>
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <img class="productImage" src="picture/jean.png">
-                    </div>
-                    <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
-                        <p>Black - M</p>
-                        <br />
-                        <p>1 x RM 99.90</p>
-                    </div>
-                </div>
-            </li>
-            </ul>
     </div>
+
+    <!--    ====================================== 2nd page ======================================================-->
+
+    <div data-role="page" id="mycart_checkout">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Check Out</h1>
+            <a href="#" id="mycart_checkouthome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <div class="ui-content">
+            <h4><u>Personal Information:</u></h4>
+            <p><b>Name: </b>Chloe Yap</p>
+            <p><b>E-mail: </b>chloe@gmail.com</p>
+            <p><b>Contact: </b>010-1113334456</p>
+
+            <h4><u>Item Information:</u></h4>
+            <p>
+                1. Lovely Candy Blouse<br />
+                Blue - S
+            </p>
+            <p style="text-align: right">1 x RM 39.90</p>
+            <p>
+                2. Two Tone Long Sleeve Shirt<br />
+                Dark Grey - M
+            </p>
+            <p style="text-align: right">1 x RM 79.90</p>
+            <p style="text-align: right">Total: <b>RM 119.80</b></p>
+
+            <a href="#" id="next1btn" class="ui-btn ui-corner-all ui-mini">Next</a>
+        </div>
+
+    </div>
+
+    <!--    ====================================== 3rd page ======================================================-->
+
+    <div data-role="page" id="mycart_checkout_method">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Check Out</h1>
+            <a href="#" id="mycart_checkout_methodhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <img class="progressImage" src="picture/progress1.jpg" />
+
+        <br />
+        <form>
+            <fieldset data-role="controlgroup">
+                <legend>Payment Method: </legend>
+                <input type="radio" name="payment" id="credit">
+                <label for="credit">Credit Card or Debit Card<img class="paymentImage" src="picture/credit.jpg"></label>
+
+                <input type="radio" name="payment" id="paypal">
+                <label for="paypal">PayPal<img class="paymentImage" src="picture/paypal.jpg"></label>
+
+                <input type="radio" name="payment" id="cod" value="on" checked="checked">
+                <label for="cod">Cash on Delivery<img class="paymentImage" src="picture/cod.png"></label>
+            </fieldset>
+        </form>
+        <br />
+        <br />
+        <div class="ui-content">
+            <a href="#" id="next2btn" class="ui-btn ui-corner-all ui-mini">Next</a>
+        </div>
+    </div>
+
+    <!--    ====================================== 4th page ======================================================-->
+
+    <div data-role="page" id="mycart_checkout_method_cod">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Confirmation</h1>
+            <a href="#" id="mycart_checkout_method_codhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <img class="progressImage" src="picture/progress2.jpg" />
+        <br />
+
+        <div class="ui-content">
+            <p><b>Name: </b>Chloe Yap</p>
+            <p><b>E-mail: </b>chloe@gmail.com</p>
+            <p><b>Contact: </b>010-1113334456</p>
+            <br />
+            <p>Total: <b>RM 119.80</b></p>
+            <br />
+
+            <p style="white-space: normal">
+                <i>*By clicking the Confirm button, 
+                you are requested to step into the shop and pay for the items within 7 days.
+                The items will be released for sales after the duration.
+                </i>
+            </p>
+            <a href="#" id="confirm1btn" class="ui-btn ui-corner-all ui-mini">Confirm</a>
+        </div>
+    </div>
+
+    <!--    ====================================== 5th page ======================================================-->
+
+    <div data-role="page" id="mycart_checkout_method_cod_confirm">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Summary</h1>
+            <a href="index.html" data-role="button" data-icon="home" data-iconshow="false" data-iconpos="notext" class="ui-btn-right"></a>
+        </div>
+
+        <img class="progressImage" src="picture/progress3.jpg" />
+
+        <div class="ui-content">
+            <h4><u>Summary:</u></h4>
+            <ul data-role="listview">
+                <li>
+                    <p>
+                        1. Lovely Candy Blouse<br />
+                        Blue - S
+                    </p>
+                    <p>
+                        2. Two Tone Long Sleeve Shirt<br />
+                        Dark Grey - M
+                    </p>
+                </li>
+            </ul>
+            <br />
+            <p>Reference No.: <b>145523</b></p>
+            <p>Payment Due: <b>RM 119.80</b></p>
+            <p>Payment Method: <b>Cash on Delivery</b></p>
+            <p>Retailer: <b>Padini Concept Store</b></p>
+            <br />
+            <a href="#" id="okbtn1" class="ui-btn ui-corner-all ui-mini">OK</a>
+        </div>
+    </div>
+
 
 </body>
 </html>

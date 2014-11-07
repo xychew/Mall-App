@@ -2,22 +2,26 @@
 <html>
 <head>
 
-    <title></title>
+    <title>IFCA Mall App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/StyleSheet.css">
+
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="myJS/page.js"></script>
-    <script type="text/javascript" src="myJS/directory.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
     <link rel="stylesheet" href="js/jquery.mobile-1.4.3.min.css">
+
+    <script type="text/javascript" src="myJS/home.js"></script>
+    <script type="text/javascript" src="myJS/directory.js"></script>
+    <link rel="stylesheet" href="css/StyleSheet.css">
 </head>
 
 <body>
 
+    <!--======================================1st page=====================================-->
+
     <div data-role="page" id="directory">
         <div data-role="header" data-position="fixed">
             <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
-                <h1>Directory</h1>
+            <h1>Directory</h1>
             <a href="#" id="directoryhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
         </div>
 
@@ -38,6 +42,773 @@
             </ul>
         </div>
     </div>
+
+    <!--======================================fashion 2nd page=====================================-->
+
+    <div data-role="page" id="directory_fashion">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Fashion</h1>
+            <a href="#" id="directory_fashionhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" data-inset="false">
+                <li><a id="f1" href="#">
+                    <img src="picture/f1.jpg"><h2>Anna Kelly</h2>
+                    <p>Lot 13, Level G</p>
+                </a></li>
+                <li><a id="f2" href="#">
+                    <img src="picture/f2.jpg"><h2>Bossini</h2>
+                    <p>Lot 03, Level UG</p>
+                </a></li>
+                <li><a id="f3" href="#">
+                    <img src="picture/f3.jpg"><h2>Nichii</h2>
+                    <p>Lot 27, Level UG</p>
+                </a></li>
+                <li><a id="f4" href="#">
+                    <img src="picture/f4.jpg"><h2>Padini Concept Store</h2>
+                    <p>Lot 03, Level CC</p>
+                </a></li>
+                <li><a id="f5" href="#">
+                    <img src="picture/f5.jpg"><h2>Hus Puppies Footwear</h2>
+                    <p>Lot 49, Level CC</p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--======================================food 2nd page=====================================-->
+
+    <div data-role="page" id="directory_food">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Food & Beverages</h1>
+            <a href="#" id="directory_foodhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" data-inset="false">
+                <li><a id="b1" href="#">
+                    <img src="picture/b1.png"><h2>Auntie Anne's</h2>
+                    <p>Lot 20, Level LG</p>
+                </a></li>
+                <li><a id="b2" href="#">
+                    <img src="picture/b2.png"><h2>Bar B Q Plaza</h2>
+                    <p>Lot 20, Level 2</p>
+                </a></li>
+                <li><a id="b3" href="#">
+                    <img src="picture/b3.png"><h2>Bee Cheng Hiang</h2>
+                    <p>Lot 02, Level LG</p>
+                </a></li>
+                <li><a id="b4" href="#">
+                    <img src="picture/b4.png"><h2>Burger King</h2>
+                    <p>Lot 16, Level 2</p>
+                </a></li>
+                <li><a id="b5" href="#">
+                    <img src="picture/b5.png"><h2>Chatime</h2>
+                    <p>Lot K02, Level 2</p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--======================================fashion 3rd page=====================================-->
+
+    <div data-role="page" id="directory_fashion_padini">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Padini Concept Store</h1>
+            <a href="#" id="directory_fashion_padinihome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <img id="padini" src="picture/padini.jpg" alt="Padini Concept Store">
+            <p>
+                The new favourite in the Malaysian fashion scene, 
+                the Padini Concept Store reinvents the way you shop. 
+                With all Padini brands under this one roof, it gives a new meaning to one-stop-shopping. 
+                Be prepared for fashion revolution in the making.
+            </p>
+
+            <p><b>Location: </b>Lot 03, Level CC</p>
+            <p><b>Phone: </b>03-78872778</p>
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#" id="padini_viewproductbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn ui-corner-all ui-shadow">View Product</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" id="padini_viewpromotionbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn ui-corner-all ui-shadow">View Promotion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======================================food 3rd page=====================================-->
+
+    <div data-role="page" id="directory_food_burger">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Burger King</h1>
+            <a href="#" id="directory_food_burgerhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <img id="burger" src="picture/burger.png" alt="Burger King">
+            <p>
+                Swing by for smashing burgers, fries and soft drinks. 
+                It’s a whopper of a great experience and excellent service 
+                no matter how you look at it. Burger King – renowned 
+                for “Great Taste” and “Friendly and Fast” service all the way!
+            </p>
+
+            <p><b>Location: </b>Lot 16, Level 2</p>
+            <p><b>Phone: </b>03-78872699</p>
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#" id="burger_viewproductbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn ui-corner-all ui-shadow">View Product</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" id="burger_viewpromotionbtn" data-role="button" data-transition="slide" style="font-size: 12px" class="ui-btn ui-corner-all ui-shadow">View Promotion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--======================================fashion 4th page=====================================-->
+
+    <div data-role="page" id="directory_fashion_product">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Product</h1>
+            <a href="#" id="directory_fashion_producthome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <form class="ui-filterable">
+            <input id="filterBasic-input" data-type="search" placeholder="Enter keyword to search">
+        </form>
+
+        <div data-role="tabs" id="tabs1">
+            <div data-role="navbar">
+                <ul>
+                    <li><b>SORT BY: </b></li>
+                    <li><a href="#fashion_price" data-ajax="false">Price</a></li>
+                    <li><a href="#fashion_a-z" data-ajax="false">A-Z</a></li>
+                </ul>
+            </div>
+            <div id="fashion_price">
+
+                <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true">
+                    <li><b>Logo Tee</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite1" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/logotee.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Yellow - M</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="addCartP1" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Lovely Candy Blouse</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite2" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext ui-alt-icon"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/blouse.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px;">
+
+                                <p>Yellow - S</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="addCartP2" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Men</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite3" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_men.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - L</p>
+                                <br />
+                                <p>RM 59.90</p>
+                                <br />
+                                <a href="#" id="addCartP3" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Women</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite4" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_women.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Pink - M</p>
+                                <br />
+                                <p>RM 79.90</p>
+                                <br />
+                                <a href="#" id="addCartP4" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Hoodie</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite5" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/hoodie.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Red - M</p>
+                                <br />
+                                <p>RM 89.90</p>
+                                <br />
+                                <a href="#" id="addCartP5" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Long Sleeve Shirt</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite6" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/longsleeve.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Red - L</p>
+                                <p>Black - L</p>
+                                <br />
+                                <p>RM 99.90</p>
+                                <br />
+                                <a href="#" id="addCartP6" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="fashion_a-z">
+
+                <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true">
+
+                    <li><b>Hoodie</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite7" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/hoodie.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Red - M</p>
+                                <br />
+                                <p>RM 89.90</p>
+                                <br />
+                                <a href="#" id="addCartP7" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Logo Tee</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite8" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/logotee.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Yellow - M</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="addCartP8" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Long Sleeve Shirt</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite9" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/longsleeve.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Red - L</p>
+                                <p>Black - M</p>
+                                <br />
+                                <p>RM 99.90</p>
+                                <br />
+                                <a href="#" id="addCartP9" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Lovely Candy Blouse</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite10" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext ui-alt-icon"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/blouse.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px;">
+                                <p>Yellow - S</p>
+                                <br />
+                                <p>RM 39.90</p>
+                                <br />
+                                <a href="#" id="addCartP10" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Men</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite11" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_men.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Green - L</p>
+                                <br />
+                                <p>RM 59.90</p>
+                                <br />
+                                <a href="#" id="addCartP11" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Sleeveless Shirt - Women</b>
+                        <span class="favouriteIcon">
+                            <a id="fa_favourite12" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/sleeveless_women.jpg">
+                            </div>
+                            <div class="ui-block-b" style="width: 45%; margin-left: 5px; margin-top: 10px;">
+                                <p>Pink - M</p>
+                                <br />
+                                <p>RM 79.90</p>
+                                <br />
+                                <a href="#" id="addCartP12" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--======================================food 4th page=====================================-->
+
+    <div data-role="page" id="directory_food_product">
+        <div data-role="header" data-position="fixex">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Product</h1>
+            <a href="#" id="directory_food_producthome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <form class="ui-filterable">
+            <input id="Text1" data-type="search" placeholder="Enter keyword to search">
+        </form>
+
+        <div data-role="tabs" id="tabs2">
+            <div data-role="navbar">
+                <ul>
+                    <li><b>SORT BY: </b></li>
+                    <li><a href="#food_price" data-ajax="false">Price</a></li>
+                    <li><a href="#food_a-z" data-ajax="false">A-Z</a></li>
+                </ul>
+            </div>
+            <div id="food_price">
+
+                <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true">
+
+                    <li><b>Grilled Chicken</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite1" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext ui-alt-icon"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/grill.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 7.95</p>
+                                <p>L - RM 9.95</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>BBQ Cheeseburger</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite2" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/bbq.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 10.95</p>
+                                <p>L - RM 12.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Spicy TenderCrisp®</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite3" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/spicy.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 14.95</p>
+                                <p>L - RM 16.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Whopper</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite4" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/whopper.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 15.95</p>
+                                <p>L - RM 16.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Tender Grilled</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite5" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/tender_grill.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px;">
+
+                                <p>M - RM 15.95</p>
+                                <p>L - RM 17.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Whopper® Black Pepper</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite6" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/whopper_pepper.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 16.95</p>
+                                <p>L - RM 17.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div id="food_a-z">
+
+                <ul data-role="listview" data-filter="true" data-input="#filterBasic-input" data-inset="true">
+
+                    <li><b>BBQ Cheeseburger</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite7" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/bbq.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 10.95</p>
+                                <p>L - RM 12.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Grilled Chicken</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite8" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext ui-alt-icon"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/grill.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 7.95</p>
+                                <p>L - RM 9.95</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Spicy TenderCrisp®</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite9" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/spicy.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 14.95</p>
+                                <p>L - RM 16.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Tender Grilled</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite10" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/tender_grill.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px;">
+
+                                <p>M - RM 15.95</p>
+                                <p>L - RM 17.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><b>Whopper</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite11" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/whopper.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 15.95</p>
+                                <p>L - RM 16.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li><b>Whopper® Black Pepper</b>
+                        <span class="favouriteIcon">
+                            <a id="fo_favourite12" href="#" class="ui-btn ui-corner-all ui-icon-heart ui-btn-icon-notext"></a>
+                        </span>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <img class="productImage" src="picture/whopper_pepper.png">
+                            </div>
+                            <div class="ui-block-b" style="width: 40%; margin-left: 5px; margin-top: 10px;">
+                                <p>M - RM 16.95</p>
+                                <p>L - RM 17.15</p>
+                                <br />
+                                <p style="white-space: normal">Meal also includes fries & drinks</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--======================================fashion 5th page=====================================-->
+
+    <div data-role="page" id="promotion_fashion">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Promotion</h1>
+            <a href="#" id="promotion_fashionhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <ul data-role="listview" data-inset="true" class="ui-content">
+            <li><b>Mix & Match</b>
+
+                <img class="promotionImage" src="picture/mix.jpg">
+                <p>Top & Bottom: <b>2 for RM 168</b></p>
+                <p></p>
+
+                <br />
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" id="fa_addCartPromobtn1" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a></div>
+                    <div class="ui-block-b"><a href="#" id="fa_addFavPromobtn1" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a></div>
+                </div>
+            </li>
+
+            <li><b>Style For Less</b>
+
+                <img class="promotionImage" src="picture/style.jpg">
+                <p>Blouse: <b>2 for RM 128</b></p>
+                <p>Dress & Bottom: <b>2 for RM 168</b></p>
+
+                <br />
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" id="fa_addCartPromobtn2" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a></div>
+                    <div class="ui-block-b"><a href="#" id="fa_addFavPromobtn2" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a></div>
+                </div>
+            </li>
+
+            <li><b>Amazing Deal</b>
+
+                <img class="promotionImage" src="picture/amazing.jpg">
+                <p>Blouse: <b>2 for RM 128</b></p>
+                <p>Dress & Bottom: <b>2 for RM 168</b></p>
+
+                <br />
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" id="fa_addCartPromobtn3" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a></div>
+                    <div class="ui-block-b"><a href="#" id="fa_addFavPromobtn3" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a></div>
+                </div>
+            </li>
+
+            <li><b>For Her</b>
+
+                <img class="promotionImage" src="picture/ladypants.jpg">
+                <p>Ladies Pants: <b>2 for RM 128</b></p>
+
+                <br />
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" id="fa_addCartPromobtn4" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a></div>
+                    <div class="ui-block-b"><a href="#" id="fa_addFavPromobtn4" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a></div>
+                </div>
+            </li>
+
+            <li><b>Shirt Your Love</b>
+
+                <img class="promotionImage" src="picture/menshirt.jpg">
+                <p>Men Shirt: <b>2 for RM 168</b></p>
+
+                <br />
+                <div class="ui-grid-a">
+                    <div class="ui-block-a"><a href="#" id="fa_addCartPromobtn5" class="ui-btn ui-corner-all ui-mini ui-icon-shop ui-btn-icon-left">Add to Cart</a></div>
+                    <div class="ui-block-b"><a href="#" id="fa_addFavPromobtn5" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a></div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <!--======================================food 5th page=====================================-->
+
+    <div data-role="page" id="promotion_food">
+        <div data-role="header" data-position="fixed">
+            <a href="#" data-rel="back" class="ui-btn-left ui-alt-icon ui-nodisc-icon ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all"></a>
+            <h1>Promotion</h1>
+            <a href="#" id="promotion_foodhome" class="ui-btn-right ui-alt-icon ui-nodisc-icon ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all"></a>
+        </div>
+
+        <ul data-role="listview" data-inset="true" class="ui-content">
+            <li><b>Rocker Stacker</b>
+
+                <img class="promotionImage" src="picture/burger_promo1.jpg">
+                <p style="white-space:normal"><i>Flame-grilled double patties, wild berry sauce, corn dusted bun, and smoked chicken roll.</i></p>
+                <br />
+                <p>Beef: <b>RM 14.95</b></p>
+                <p>Chicken: <b>RM 14.95</b></p>
+                <div class="ui-field-contain">
+                    <a href="#" id="fo_addFavPromobtn1" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a>
+                </div>
+            </li>
+
+            <li><b>Super Value All Day, Everyday</b>
+
+                <img class="promotionImage" src="picture/burger_promo2.jpg">
+                <p>Cheezy Jumbo Frank: <b>RM 3.95</b></p>
+                <p>Hershey's Pie: <b>RM 3.95</b></p>
+                <p>Chick 'N Chrisp: <b>RM 3.95</b></p>
+                <p>Cheeseburger: <b>RM 3.95</b></p>
+
+                <div class="ui-field-contain">
+                    <a href="#" id="fo_addFavPromobtn2" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a>
+                </div>
+            </li>
+
+            <li><b>Super Value All Day, Everyday</b>
+
+                <img class="promotionImage" src="picture/burger_promo3.jpg">
+                <p>Classic Jumbo Frank: <b>RM 2.95</b></p>
+                <p>BBQ Jumbo Frank: <b>RM 2.95</b></p>
+                <p>Onion Rings: <b>RM 1.95</b></p>
+                <p>Cheezy Fries: <b>RM 1.95</b></p>
+
+                <div class="ui-field-contain">
+                    <a href="#" id="fo_addFavPromobtn3" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a>
+                </div>
+            </li>
+
+            <li><b>Rock It Fries</b>
+
+                <img class="promotionImage" src="picture/burger_promo4.jpg">
+                <p><i>Upgrade your fries (M) by Adding RM 1.</i></p>
+                <p>Ala Cart: <b>RM 5.55</b></p>
+                 <div class="ui-field-contain">
+                    <a href="#" id="fo_addFavPromobtn4" class="ui-btn ui-corner-all ui-mini ui-icon-heart ui-btn-icon-left">Add to Favourite</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
 
 </body>
 
