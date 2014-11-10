@@ -16,19 +16,24 @@ $(document).on('pagecreate', '#directory_fashion', function () {
         window.location.href = "directory.html#directory_fashion_padini";
     });
 
+});
+
+$(document).on('pagecreate', '#directory_food', function () {
+
     $("#b4").on("click", function (event) {
         window.location.href = "directory.html#directory_food_burger";
     });
 
 });
 
+
 $(document).on('pagecreate', '#directory_fashion_padini', function () {
 
-    $("#padini_viewpromotionbtn").on("click", function (event) {
+    $("#btn_padini_viewpromotion").on("click", function (event) {
         window.location.href = "directory.html#promotion_fashion";
     });
 
-    $("#padini_viewproductbtn").on("click", function (event) {
+    $("#btn_padini_viewproduct").on("click", function (event) {
         window.location.href = "directory.html#directory_fashion_product";
     });
 
@@ -36,11 +41,11 @@ $(document).on('pagecreate', '#directory_fashion_padini', function () {
 
 $(document).on('pagecreate', '#directory_food_burger', function () {
 
-    $('#burger_viewpromotionbtn').on('click', function (event) {
+    $('#btn_burger_viewpromotion').on('click', function (event) {
         window.location.href = 'directory.html#promotion_food';
     });
 
-    $("#burger_viewproductbtn").on("click", function (event) {
+    $("#btn_burger_viewproduct").on("click", function (event) {
         window.location.href = "directory.html#directory_food_product";
     });
 
