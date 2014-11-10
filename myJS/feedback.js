@@ -4,7 +4,7 @@ $(document).on('pagecreate', '#feedback', function () {
         window.location.href = "feedback.html#newfeedback";
     });
 
-    $("#ok_newfeedbackbtn").on("click", function (event) {
+    $("#btn_feedback_ok").on("click", function (event) {
         window.location.href = "feedback.html#feedback";
     });
 
@@ -24,7 +24,7 @@ $(document).on('pagecreate', '#feedback', function () {
         window.location.href = "feedback.html#feedback_view1";
     });
 
-    $("#yes_deletebtn").on("click", function (event) {
+    $("#btn_feedbackview1_delete").on("click", function (event) {
         window.location.href = "feedback.html#feedback";
     });
 });
